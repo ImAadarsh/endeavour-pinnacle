@@ -1,0 +1,24 @@
+.containerFooter {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   margin-left: auto;
+   display: flex;
+   justify-content: center;
+}
+.containerFooter ul {
+    display: flex;
+}
+.containerFooter ul li{
+    list-style-type: none;
+    margin-right: 29px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.containerFooter ul a li > * {
+    font-size: 30px;
+}
