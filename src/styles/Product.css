@@ -1,34 +1,34 @@
+.product .header h2{
+    margin: 0%;
+    padding: 0%;
+}
 .product .header {
-    font-size: 40px;
+    font-size: 30px;
     width: 100%;
-    padding-left: 200px;
-    display: flex;
 }
 .product .list {
     display: flex;
     flex-wrap: wrap;
-    width: 900px;
-    height: 500px;
-    border: 1px solid rgb(232, 226, 226);
-    margin-left: 300px;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 .product .list .item {
-    background-color: black;
-    width: 150px;
-    height: 200px;
-    margin: 12px;
+    box-shadow: -1px -1px 10px 1px rgb(189, 187, 187);
+    border-radius: 20px;
+    width: 230px;
+    height: 300px;
+    margin: 20px;
 }
-.product .list .item > *{
-    color: white;
-    font-size: 18px;
+.product .list .item .content {
+    margin: 20px;
 }
 .product .list .item .icons {
-    opacity: 0.5;
-    color: white;
-    border: 1px solid rgb(21, 230, 237);
-    background-color: rgb(107, 212, 207);
-    box-shadow: -2px -2px 2px 2px green;
-    width: 150px;
+    width: 100%;
     height: 100px;
-    padding: 2px;
+}
+.product .list .item .icons img {
+    width: 90px;
+    height: 90px;
 }

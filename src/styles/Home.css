@@ -1,7 +1,9 @@
-.start {
-    margin-top: 100px;
+.start img {
+    margin: 150px;
 }
 .start a{
     text-decoration: none;
-    font-size: 35px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
 }

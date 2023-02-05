@@ -4,31 +4,40 @@
     padding-left: 200px;
     display: flex;
 }
+.industry .header h3 {
+    width: 78%;
+
+}
+.industry .item a {
+    color: black;
+    text-decoration: none;
+}
 .industry .list {
     display: flex;
     flex-wrap: wrap;
-    width: 900px;
+    width: 70%;
     height: 500px;
     border: 1px solid rgb(232, 226, 226);
     margin-left: 300px;
 }
 .industry .list .item {
-    background-color: black;
     width: 150px;
     height: 200px;
     margin: 12px;
 }
 .industry .list .item > *{
-    color: white;
     font-size: 18px;
 }
 .industry .list .item .icons {
-    opacity: 0.5;
     color: white;
-    border: 1px solid rgb(21, 237, 75);
-    background-color: rgb(107, 212, 107);
-    box-shadow: -2px -2px 2px 2px green;
-    width: 150px;
+    border: 1px solid rgb(21, 172, 237);
+    background-color:rgb(28, 110, 179);
+    border-radius: 25px;
+    width: 130px;
     height: 100px;
     padding: 2px;
+}
+.industry .list .item .icons img {
+    width: 80px;
+    height: 90px;
 }

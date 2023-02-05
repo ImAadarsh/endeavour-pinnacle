@@ -1,82 +1,112 @@
 import React from "react";
 import '../styles/Industry.css';
-import HomeIcon from '@mui/icons-material/Home';
-import RouterIcon from '@mui/icons-material/Router';
-import LiveTvIcon from '@mui/icons-material/LiveTv';
-import Groups2Icon from '@mui/icons-material/Groups2';
-import SchoolIcon from '@mui/icons-material/School';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
-import FlightIcon from '@mui/icons-material/Flight';
-import MedicationIcon from '@mui/icons-material/Medication';
+import Logo from "./Logo";
+import Bfsi from "../assets/Industry/1.png";
+import IOT from "../assets/Industry/2.png";
+import Entertainment from "../assets/Industry/3.png";
+import Education from "../assets/Industry/4.png";
+import Government from "../assets/Industry/5.png";
+import StartUp from "../assets/Industry/6.png";
+import Logistic from "../assets/Industry/7.png";
+import RealEstate from "../assets/Industry/8.png";
+import Healthcare from "../assets/Industry/9.png";
+import Pharmaceutical from "../assets/Industry/10.png";
+import TravelAndFood from "../assets/Industry/11.png";
+import Ecommerce from "../assets/Industry/12.png";
+
 const Industry = () =>{
     return (
         <div className="industry">
+            <Logo></Logo>
             <div className="header">
-               INDUSTRY LIST
+               <h3>INDUSTRY LIST</h3>
             </div>
-            <div className="list">
-                <a href="/start/industry/bfsi">
+            <div className="list" >
+
                 <div className="item">
-                    <div className="icons"><HomeIcon style={{fontSize:'90px'}}></HomeIcon></div>
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={Bfsi}></img></div>
                     <div style={{marginTop:'30px'}}>BFSI</div>
+                    </a>
                 </div>
-                </a> 
-                <a href="/start/industry/bfsi">
+                
                 <div className="item">
-                    <div className="icons"><RouterIcon style={{fontSize:'90px'}}></RouterIcon></div>
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={IOT}></img></div>
                     <div style={{marginTop:'30px'}}>IOT</div>
+                    </a>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
+            
                 <div className="item">
-                    <div className="icons"><LiveTvIcon style={{fontSize:'90px'}}></LiveTvIcon></div>
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={Entertainment}></img></div>
                     <div style={{marginTop:'30px'}}>ENTERTAINMENT</div>
+                    </a>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
+            
                 <div className="item">
-                    <div className="icons"><SchoolIcon style={{fontSize:'90px'}}></SchoolIcon></div>
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={Education}></img></div>
                     <div style={{marginTop:'30px'}}>EDUCATION</div>
+                    </a>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
+            
                 <div className="item">
-                    <div className="icons"><HomeIcon style={{fontSize:'90px'}}></HomeIcon></div>
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={Government}></img></div>
                     <div style={{marginTop:'30px'}}>GOVERNMENT</div>
+                    </a>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
+            
                 <div className="item">
-                    <div className="icons"><Groups2Icon style={{fontSize:'90px'}}></Groups2Icon></div>
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={StartUp}></img></div>
                     <div style={{marginTop:'30px'}}>START-UP</div>
+                    </a>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
+            
                 <div className="item">
-                    <div className="icons"><ShoppingCartIcon style={{fontSize:'90px'}}></ShoppingCartIcon></div>
-                    <div style={{marginTop:'30px'}}>E-COMMERCE</div>
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={Logistic}></img></div>
+                    <div style={{marginTop:'30px'}}>LOGISTIC</div>
+                    </a>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
+            
                 <div className="item">
-                    <div className="icons"><MedicalInformationIcon style={{fontSize:'90px'}}></MedicalInformationIcon></div>
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={RealEstate}></img></div>
+                    <div style={{marginTop:'30px'}}>REAL ESTATE</div>
+                    </a>
+                </div>
+            
+                <div className="item">
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={Healthcare}></img></div>
                     <div style={{marginTop:'30px'}}>HEALTHCARE</div>
+                    </a>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
+            
                 <div className="item">
-                    <div className="icons"><FlightIcon style={{fontSize:'90px'}}></FlightIcon></div>
-                    <div style={{marginTop:'30px'}}>TRAVEL & FOOD</div>
-                </div>
-                </a>
-                <a href="/start/industry/bfsi">
-                <div className="item">
-                    <div className="icons"><MedicationIcon style={{fontSize:'90px'}}></MedicationIcon></div>
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={Pharmaceutical}></img></div>
                     <div style={{marginTop:'30px'}}>PHARMACEUTICAL</div>
+                    </a>
                 </div>
-                </a>
-               
+
+                <div className="item">
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={TravelAndFood}></img></div>
+                    <div style={{marginTop:'30px'}}>TRAVEL & FOOD</div>
+                    </a>
+                </div>
+
+                <div className="item">
+                    <a href="/start/industry/bfsi">
+                    <div className="icons"><img src={Ecommerce}></img></div>
+                    <div style={{marginTop:'30px'}}>E-COMMERCE</div>
+                    </a>
+                </div>
+                
             </div>
         </div>
     )

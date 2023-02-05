@@ -1,18 +1,21 @@
 .containerBfsi {
-    display: flex;
-    width: 1000px;
-    margin-left:310px ;
-    margin-top: 100px;
+    width: 100%;
 }
 .containerBfsi .listBfsi{
     width: 45%;
+}
+.containerBfsi .listAndImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
 }
 .containerBfsi .listBfsi ul {
     list-style-type: none;
 }
 .containerBfsi .listBfsi ul li {
     font-size: 20px;
-    margin-top: 10px;
     
 }
 .containerBfsi .imgBfsi{
@@ -21,5 +24,5 @@
 }
 .containerBfsi .imgBfsi img{
     width: 100%;
-    height: 270px;
+    height: 560px;
 }

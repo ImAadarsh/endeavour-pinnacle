@@ -1,81 +1,56 @@
 import React from "react";
 import '../styles/Product.css';
-import HomeIcon from '@mui/icons-material/Home';
-import RouterIcon from '@mui/icons-material/Router';
-import LiveTvIcon from '@mui/icons-material/LiveTv';
-import Groups2Icon from '@mui/icons-material/Groups2';
-import SchoolIcon from '@mui/icons-material/School';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
-import FlightIcon from '@mui/icons-material/Flight';
-import MedicationIcon from '@mui/icons-material/Medication';
+import Logo from './Logo';
+import Sms from '../assets/Product/1.png';
+import Email from '../assets/Product/2.png';
+import WhatsApp from '../assets/Product/3.png';
+import Voice from '../assets/Product/4.png';
+
 const Product = () =>{
     return (
         <div className="product">
+            <Logo></Logo>
             <div className="header">
-               PRODUCT LIST
+               <h2>PRODUCTS LIST</h2>
             </div>
             <div className="list">
-                <a href="/start/industry/bfsi">
+               
                 <div className="item">
-                    <div className="icons"><HomeIcon style={{fontSize:'90px'}}></HomeIcon></div>
-                    <div style={{marginTop:'30px'}}>BFSI</div>
+                    <div className="icons"><img src={Sms}></img></div>
+                    <div style={{fontWeight :'bold'}}>BFSI</div>
+                    <div className="content">
+                        <p>Deliver your transactional, OTPs, and Promotional messages securely and timely to the consumer.</p>
+                    </div>
+                    
                 </div>
-                </a> 
-                <a href="/start/industry/bfsi">
+                
+
+                
                 <div className="item">
-                    <div className="icons"><RouterIcon style={{fontSize:'90px'}}></RouterIcon></div>
-                    <div style={{marginTop:'30px'}}>IOT</div>
+                    <div className="icons"><img src={Email}></img></div>
+                    <div style={{fontWeight :'bold'}}>EMAIL</div>
+                    <div className="content">
+                        <p>Power up the campaigns with the most coat-effective and high ROI email solutions.</p>
+                    </div>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
+
+            
                 <div className="item">
-                    <div className="icons"><LiveTvIcon style={{fontSize:'90px'}}></LiveTvIcon></div>
-                    <div style={{marginTop:'30px'}}>ENTERTAINMENT</div>
+                    <div className="icons"><img src={WhatsApp}></img></div>
+                    <div style={{fontWeight :'bold'}}>WHATSAPP BUSINESS API</div>
+                    <div className="content">
+                        <p>Reach more than 2 billion users with fast, reliable, ecrypted, and AI/ML-enabled WhatsApp Business API</p>
+                    </div>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
+
+            
                 <div className="item">
-                    <div className="icons"><SchoolIcon style={{fontSize:'90px'}}></SchoolIcon></div>
-                    <div style={{marginTop:'30px'}}>EDUCATION</div>
+                    <div className="icons"><img src={Voice}></img></div>
+                    <div style={{fontWeight :'bold'}}>VOICE</div>
+                    <div className="content">
+                        <p>Procreate tailored voice call solutions and seamlessly reach millions in a day in various global language</p>
+                    </div>
                 </div>
-                </a>
-                <a href="/start/industry/bfsi">
-                <div className="item">
-                    <div className="icons"><HomeIcon style={{fontSize:'90px'}}></HomeIcon></div>
-                    <div style={{marginTop:'30px'}}>GOVERNMENT</div>
-                </div>
-                </a>
-                <a href="/start/industry/bfsi">
-                <div className="item">
-                    <div className="icons"><Groups2Icon style={{fontSize:'90px'}}></Groups2Icon></div>
-                    <div style={{marginTop:'30px'}}>START-UP</div>
-                </div>
-                </a>
-                <a href="/start/industry/bfsi">
-                <div className="item">
-                    <div className="icons"><ShoppingCartIcon style={{fontSize:'90px'}}></ShoppingCartIcon></div>
-                    <div style={{marginTop:'30px'}}>E-COMMERCE</div>
-                </div>
-                </a>
-                <a href="/start/industry/bfsi">
-                <div className="item">
-                    <div className="icons"><MedicalInformationIcon style={{fontSize:'90px'}}></MedicalInformationIcon></div>
-                    <div style={{marginTop:'30px'}}>HEALTHCARE</div>
-                </div>
-                </a>
-                <a href="/start/industry/bfsi">
-                <div className="item">
-                    <div className="icons"><FlightIcon style={{fontSize:'90px'}}></FlightIcon></div>
-                    <div style={{marginTop:'30px'}}>TRAVEL & FOOD</div>
-                </div>
-                </a>
-                <a href="/start/industry/bfsi">
-                <div className="item">
-                    <div className="icons"><MedicationIcon style={{fontSize:'90px'}}></MedicationIcon></div>
-                    <div style={{marginTop:'30px'}}>PHARMACEUTICAL</div>
-                </div>
-                </a>
                
             </div>
         </div>
