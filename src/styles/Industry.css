@@ -1,13 +1,8 @@
-.industry .header {
-    font-size: 40px;
+.industry {
     width: 100%;
-    padding-left: 200px;
-    display: flex;
+    height: 100vh;
 }
-.industry .header h3 {
-    width: 78%;
 
-}
 .industry .item a {
     color: black;
     text-decoration: none;

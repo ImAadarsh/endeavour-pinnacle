@@ -1,6 +1,5 @@
 import React from "react";
 import '../styles/Industry.css';
-import Logo from "./Logo";
 import Bfsi from "../assets/Industry/1.png";
 import IOT from "../assets/Industry/2.png";
 import Entertainment from "../assets/Industry/3.png";
@@ -13,16 +12,14 @@ import Healthcare from "../assets/Industry/9.png";
 import Pharmaceutical from "../assets/Industry/10.png";
 import TravelAndFood from "../assets/Industry/11.png";
 import Ecommerce from "../assets/Industry/12.png";
+import Navigation from "./Navigation";
+import Next from "./Next";
 
 const Industry = () =>{
     return (
         <div className="industry">
-            <Logo></Logo>
-            <div className="header">
-               <h3>INDUSTRY LIST</h3>
-            </div>
+            <Navigation content="INDUSTRY"></Navigation>
             <div className="list" >
-
                 <div className="item">
                     <a href="/start/industry/bfsi">
                     <div className="icons"><img src={Bfsi}></img></div>
@@ -108,6 +105,7 @@ const Industry = () =>{
                 </div>
                 
             </div>
+            <Next url={"1"}></Next>
         </div>
     )
 }

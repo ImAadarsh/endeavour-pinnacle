@@ -11,6 +11,9 @@ import BackgroundVideo from './components/BackgroundVideo.jsx';
 import PinnaclesSolutions from './components/PinnaclesSolutions';
 import ProductDemoVideo from './components/ProductDemoVideo';
 import SolutionsBenefits from './components/SolutionsBenefits';
+import ValueAddition from './components/ValueAddition';
+import OurMerits from './components/OurMerits';
+import CaseStudiesAndTestimonials from './components/CaseStudiesAndTestimonials';
 function App() {
   const [loading, setLoading] = useState(false);
 
@@ -31,7 +34,14 @@ function App() {
           <Route exact path="/start" element={<Divider />}></Route>
           <Route exact path="/start/product" element={<Product />}></Route>
           <Route exact path="/start/industry" element={<Industry />}></Route>
-          <Route exact path="/start/industry/*" element={<Bfsi />}></Route>
+          <Route exact path="/start/1" element={<Bfsi />}></Route>
+          <Route exact path="/start/2" element={<Product />}></Route>
+          <Route exact path="/start/3" element={<PinnaclesSolutions />}></Route>
+          <Route exact path="/start/4" element={<ProductDemoVideo />}></Route>
+          <Route exact path="/start/5" element={<SolutionsBenefits />}></Route>
+          <Route exact path="/start/6" element={<ValueAddition />}></Route>
+          <Route exact path="/start/7" element={<OurMerits />}></Route>
+          <Route exact path="/start/8" element={<CaseStudiesAndTestimonials />}></Route>
         </Routes>
       </>      
     )}

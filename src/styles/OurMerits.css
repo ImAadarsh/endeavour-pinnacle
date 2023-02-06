@@ -1,0 +1,24 @@
+.ourMerits .list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+.ourMerits .list .item {
+    width: 200px;
+    height: 120px;
+    margin: 5px;
+}
+.ourMerits .list .item .content {
+    margin: 20px;
+}
+.ourMerits .list .item .icons {
+    width: 100%;
+    height: 100px;
+}
+.ourMerits .list .item .icons img {
+    width: 80px;
+    height: 80px;
+}

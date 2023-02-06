@@ -1,18 +1,16 @@
 import React from "react";
 import '../styles/SolutionsBenefits.css';
-import Logo from './Logo';
 import icon1 from '../assets/SolutionBenefits/1.png';
 import icon2 from '../assets/SolutionBenefits/2.png';
 import icon3 from '../assets/SolutionBenefits/3.png';
 import icon4 from '../assets/SolutionBenefits/4.png';
+import Navigation from "./Navigation";
+import Next from "./Next";
 
 const SolutionsBenefits = () =>{
     return (
         <div className="solutionsBenefits">
-            <Logo></Logo>
-            <div className="header">
-               <h2>Solutions Benefits</h2>
-            </div>
+            <Navigation content={"Solutions Benefits"}></Navigation>
             <div className="list">
                
                 <div className="item">
@@ -49,6 +47,7 @@ const SolutionsBenefits = () =>{
                 </div>
                
             </div>
+            <Next url={"6"}></Next>
         </div>
     )
 }

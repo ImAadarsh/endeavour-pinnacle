@@ -1,16 +1,8 @@
-.product .header h2{
-    margin: 0%;
-    padding: 0%;
-}
-.product .header {
-    font-size: 30px;
-    width: 100%;
-}
 .product .list {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     justify-content: center;
     align-items: center;
 }

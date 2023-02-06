@@ -1,15 +1,13 @@
 import React from "react";
 import '../styles/ProductDemoVideo.css';
-import Logo from './Logo';
+import Navigation from "./Navigation";
+import Next from "./Next";
 
 const ProductDemoVideo = () =>{
     return (
         <div className="productDemoVideo">
-            <Logo></Logo>
-            <div className="header">
-               <h2>Product Demo Video</h2>
-            </div>
-            <div style={{display : 'flex', height : '100vh', justifyContent : 'center', alignItems : 'center'}}> 
+            <Navigation content={"Product Demo Video"}></Navigation>
+            <div style={{display : 'flex', height : '70vh', justifyContent : 'center', alignItems : 'center'}}> 
             <iframe 
                 width="560" 
                 height="315" 
@@ -21,6 +19,7 @@ const ProductDemoVideo = () =>{
             >
             </iframe>             
             </div>
+            <Next url={"5"}></Next>
         </div>
     )
 }

@@ -1,18 +1,16 @@
 import React from "react";
 import '../styles/Product.css';
-import Logo from './Logo';
 import Sms from '../assets/Product/1.png';
 import Email from '../assets/Product/2.png';
 import WhatsApp from '../assets/Product/3.png';
 import Voice from '../assets/Product/4.png';
+import Navigation from "./Navigation";
+import Next from "./Next";
 
 const Product = () =>{
     return (
         <div className="product">
-            <Logo></Logo>
-            <div className="header">
-               <h2>PRODUCTS LIST</h2>
-            </div>
+            <Navigation content="PRODUCTS LIST"></Navigation>
             <div className="list">
                
                 <div className="item">
@@ -53,6 +51,7 @@ const Product = () =>{
                 </div>
                
             </div>
+            <Next url={"3"}></Next>
         </div>
     )
 }

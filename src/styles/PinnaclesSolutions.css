@@ -1,16 +1,8 @@
-.pinnaclesSolutions .header h2{
-    margin: 0%;
-    padding: 0%;
-}
-.pinnaclesSolutions .header {
-    font-size: 30px;
-    width: 100%;
-}
 .pinnaclesSolutions .list {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     justify-content: center;
     align-items: center;
 }
@@ -23,6 +15,7 @@
 .pinnaclesSolutions .list .item .icons {
     width: 100%;
     height: 100px;
+    margin-top: 20px;
 }
 .pinnaclesSolutions .list .item .icons img {
     width: 200px;

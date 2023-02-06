@@ -4,13 +4,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import '../styles/Navigation.css';
 import { useNavigate} from "react-router-dom";
-const Navigation = () => {
+import Logo from "./Logo";
+import Header from "./Header";
+const Navigation = ({content}) => {
     const navigate = useNavigate();
     return (
         <div className="header">
-            <a href="#"><MenuIcon style={{fontSize:'50px'}}></MenuIcon></a>
-            <img src={logo} style={{width:'140px',height:'80px'}}></img>
-            <a><CloseIcon style={{fontSize:'50px'}} onClick={() => navigate(-1)}></CloseIcon></a>
+            <Logo></Logo>
+            <Header content={content}></Header>
         </div>
     )
 }

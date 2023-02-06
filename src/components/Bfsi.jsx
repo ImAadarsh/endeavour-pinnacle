@@ -1,15 +1,12 @@
 import React from "react";
 import bfsiLogo from '../assets/Bfsi.png';
 import '../styles/Bfsi.css';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import Logo from './Logo';
+import Navigation from "./Navigation";
+import Next from "./Next";
 const Bfsi = () =>{
     return (
         <div className="containerBfsi">
-            <Logo></Logo>
-            <div className="header">
-                <h1>BFSI- Banking, Financial Sevices and Insurance</h1>
-            </div>
+            <Navigation content={"BFSI- Banking, Financial Sevices and Insurance"}></Navigation>
             <div className="listAndImg">
                 <div className="listBfsi">
                     <h1>Build Trust and Achieve More with Timely Communication</h1>
@@ -30,6 +27,7 @@ const Bfsi = () =>{
                 <img src={bfsiLogo}></img>
                 </div>
             </div>
+            <Next url={"2"}></Next>
         </div>
     )
 }
