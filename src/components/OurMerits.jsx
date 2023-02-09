@@ -18,28 +18,21 @@ const OurMerits = () =>{
     return (
         <div className="ourMerits">
             <Navigation content={"Our Merits"}></Navigation>
-            <div className="list">
-               
+            <div className="list">            
                 <div className="item">
                     <div className="icons"><img src={icon1}></img></div>
                     <div style={{fontWeight :'bold'}}>19 Years</div>
                     <div className="content">
                         <p>Of learning as a marketer</p>
-                    </div>
-                    
-                </div>
-                
-
-                
+                    </div> 
+                </div>              
                 <div className="item">
                     <div className="icons"><img src={icon2}></img></div>
                     <div style={{fontWeight :'bold'}}>6000+</div>
                     <div className="content">
                         <p>Satisfied</p>
                     </div>
-                </div>
-
-            
+                </div>        
                 <div className="item">
                     <div className="icons"><img src={icon3}></img></div>
                     <div style={{fontWeight :'bold'}}>75 Billion +</div>
@@ -53,17 +46,14 @@ const OurMerits = () =>{
                     <div className="content">
                         <p>Channel Partners</p>
                     </div>
-                </div>
-
-            
+                </div>      
                 <div className="item">
                     <div className="icons"><img src={icon4}></img></div>
                     <div style={{fontWeight :'bold'}}>99.99%</div>
                     <div className="content">
                         <p>API Uptime</p>
                     </div>
-                </div>
-               
+                </div>            
             </div>
             <div className="list">
                 <div className="item">

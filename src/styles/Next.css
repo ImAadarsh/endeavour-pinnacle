@@ -3,3 +3,9 @@
     right: 60px;
     bottom: 80px;
 }
+
+@media only screen and (max-width: 600px) {
+    .next {
+       top: 30px;
+    }
+}

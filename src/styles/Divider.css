@@ -5,19 +5,41 @@
     align-items: center;
     justify-content: center;
     margin-top: auto;
+    background-image: url('../assets/bgDivider.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
-    background-size: 800px 600px;
+    background-size: 70% 80%;
 }
 
 .divider ul li{
     padding-top: 50px;
-    margin: 130px;
+    margin: 12%;
     font-size: 35px;
 }
 
 .divider ul li a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 850px) {
+    .divider ul {
+        padding-top: 40%;
+        background-image: none;
+        display: block;
+    }
+    .divider ul li {
+        margin: 0%;
+        margin-right:10%;
+        margin-bottom:10%;
+    }
+    .divider ul li a {
+        background-color: rgb(28, 110, 179);
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 30px;
+        
+    }
 }

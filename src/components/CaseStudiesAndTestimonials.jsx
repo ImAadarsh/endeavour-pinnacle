@@ -10,6 +10,33 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Next from "./Next";
 
 const CaseStudiesAndTestimonials = () =>{
+    const options = {
+        margin: 30,
+        responsiveClass: true,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        navText: ["Prev", "Next"],
+        smartSpeed: 1000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            400: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            700: {
+                items: 3,
+            },
+            1000: {
+                items: 4,
+            }
+        },
+    };
     return (
         <div className="caseStudiesAndTestimonials" >
             <Logo></Logo>
@@ -18,7 +45,7 @@ const CaseStudiesAndTestimonials = () =>{
                     <h2>CaseStudies</h2>
                     <a href="#">100+ CASE STUDY</a>
                 </div>   
-                <OwlCarousel className="owl-theme" items={4} loop nav style={{width:"80%"}}>
+                <OwlCarousel className="owl-theme" {...options} loop style={{width:"80%"}}>
                     <div className="item">
                         <div className="icons"><img src={icon1}></img></div>
                         <div className="content">
@@ -64,7 +91,7 @@ const CaseStudiesAndTestimonials = () =>{
                     <h2>Testimonials</h2>
                     <a href="#">100+ TESTIMONIALS</a>
                 </div>   
-                <OwlCarousel className="owl-theme" items={4} loop nav style={{width:"80%"}}>
+                <OwlCarousel className="owl-theme" {...options} loop style={{width:"80%"}}>
                     <div className="item">
                         <div className="content">
                             <p>Boost your product and service's credibility by adding testimonials from your clients</p>
@@ -96,7 +123,7 @@ const CaseStudiesAndTestimonials = () =>{
                 </OwlCarousel>
                 
             </div>
-            <Next url={""}></Next>
+            <Next url={"9"}></Next>
         </div>
     )
 }

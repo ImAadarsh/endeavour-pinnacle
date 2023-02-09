@@ -1,0 +1,18 @@
+.contactUs {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contactUs .form{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactUs .form form {
+    width: 50%;
+    height: 400px;
+    box-shadow: -1px -1px 10px 1px rgb(139, 137, 135);
+    border-radius: 10px;
+}

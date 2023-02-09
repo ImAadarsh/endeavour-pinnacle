@@ -1,14 +1,20 @@
+.ourMerits {
+    width: 100%;
+    min-height: 100vh;
+}
 .ourMerits .list {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 30vh;
+    min-height: 35vh;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+    padding: 10px;
 }
 .ourMerits .list .item {
     width: 200px;
-    height: 120px;
+    height: 200px;
     margin: 5px;
 }
 .ourMerits .list .item .content {

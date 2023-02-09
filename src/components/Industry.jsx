@@ -19,6 +19,7 @@ const Industry = () =>{
     return (
         <div className="industry">
             <Navigation content="INDUSTRY"></Navigation>
+            <div className="listContainer">
             <div className="list" >
                 <div className="item">
                     <a href="/start/industry/bfsi">
@@ -106,6 +107,7 @@ const Industry = () =>{
                 
             </div>
             <Next url={"1"}></Next>
+            </div>
         </div>
     )
 }

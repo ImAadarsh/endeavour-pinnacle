@@ -14,6 +14,8 @@ import SolutionsBenefits from './components/SolutionsBenefits';
 import ValueAddition from './components/ValueAddition';
 import OurMerits from './components/OurMerits';
 import CaseStudiesAndTestimonials from './components/CaseStudiesAndTestimonials';
+import ContactUs from './components/ContactUs';
+import Login from './components/Login';
 function App() {
   const [loading, setLoading] = useState(false);
 
@@ -42,6 +44,8 @@ function App() {
           <Route exact path="/start/6" element={<ValueAddition />}></Route>
           <Route exact path="/start/7" element={<OurMerits />}></Route>
           <Route exact path="/start/8" element={<CaseStudiesAndTestimonials />}></Route>
+          <Route exact path="/start/9" element={<ContactUs />}></Route>
+          <Route exact path="/start/10" element={<Login />}></Route>
         </Routes>
       </>      
     )}

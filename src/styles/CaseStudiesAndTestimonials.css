@@ -8,6 +8,7 @@
     width: 100%;
     text-align: left;
     display: flex;
+    margin-bottom: 10px;
 }
 .caseStudiesAndTestimonials .list .header a {
     text-decoration: none;
@@ -26,10 +27,11 @@
 .caseStudiesAndTestimonials .list .item {
     box-shadow: -1px -1px 10px 1px rgb(189, 187, 187);
     border-radius: 20px;
-    width: 230px;
+    width: 90%;
     height: 210px;
     margin: 4px;
-    padding: px;
+    padding: 5px;
+
 }
 .caseStudiesAndTestimonials .list .item .content {
     margin: 5px;
@@ -44,4 +46,20 @@
 .caseStudiesAndTestimonials .list .item .icons img {
     width: 80px;
     height: 70px;
+}
+
+@media only screen and (max-width: 1320px) {
+    .caseStudiesAndTestimonials .list .item{
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .caseStudiesAndTestimonials .list .header a {
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(28, 110, 179);
+    }
+    .caseStudiesAndTestimonials .list .header {
+        margin-top: 20px;
+    }
 }

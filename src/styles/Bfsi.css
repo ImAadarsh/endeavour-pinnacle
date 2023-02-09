@@ -8,21 +8,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 65vh;
 }
-.containerBfsi .listBfsi ul {
-    list-style-type: none;
-}
-.containerBfsi .listBfsi ul li {
-    font-size: 20px;
-    
-}
 .containerBfsi .imgBfsi{
-    margin-left: 100px;
+    margin-left: 4%;
     width: 40%;
 }
 .containerBfsi .imgBfsi img{
     width: 100%;
     height: 550px;
 }
+
+@media only screen and (max-width: 900px) {
+      .containerBfsi .imgBfsi {
+        width: 400px;
+      }
+      .containerBfsi .imgBfsi img {
+        height: 350px;
+      }
+      .containerBfsi .listBfsi {
+        width: 500px;
+        padding: 5px;
+      }
+  }

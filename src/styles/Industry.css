@@ -7,13 +7,19 @@
     color: black;
     text-decoration: none;
 }
+.industry .listContainer {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .industry .list {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    height: 500px;
+    min-height: 100%;
     border: 1px solid rgb(232, 226, 226);
-    margin-left: 300px;
 }
 .industry .list .item {
     width: 150px;
@@ -35,4 +41,10 @@
 .industry .list .item .icons img {
     width: 80px;
     height: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+    .industry .list {
+        width: 90%;
+    }
 }
