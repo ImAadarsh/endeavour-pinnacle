@@ -16,10 +16,13 @@ import OurMerits from './components/OurMerits';
 import CaseStudiesAndTestimonials from './components/CaseStudiesAndTestimonials';
 import ContactUs from './components/ContactUs';
 import Login from './components/Login';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    AOS.init();
     setLoading(true);
     setTimeout(() => {
       setLoading(false);

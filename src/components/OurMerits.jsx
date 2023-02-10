@@ -19,35 +19,35 @@ const OurMerits = () =>{
         <div className="ourMerits">
             <Navigation content={"Our Merits"}></Navigation>
             <div className="list">            
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon1}></img></div>
                     <div style={{fontWeight :'bold'}}>19 Years</div>
                     <div className="content">
                         <p>Of learning as a marketer</p>
                     </div> 
                 </div>              
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon2}></img></div>
                     <div style={{fontWeight :'bold'}}>6000+</div>
                     <div className="content">
                         <p>Satisfied</p>
                     </div>
                 </div>        
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon3}></img></div>
                     <div style={{fontWeight :'bold'}}>75 Billion +</div>
                     <div className="content">
                         <p>Text delivering capacity / year</p>
                     </div>
                 </div>
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon5}></img></div>
                     <div style={{fontWeight :'bold'}}>100+</div>
                     <div className="content">
                         <p>Channel Partners</p>
                     </div>
                 </div>      
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon4}></img></div>
                     <div style={{fontWeight :'bold'}}>99.99%</div>
                     <div className="content">
@@ -56,23 +56,23 @@ const OurMerits = () =>{
                 </div>            
             </div>
             <div className="list">
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon6} style={{width:'130px',height:'150px'}}></img></div>                    
                 </div>
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon7} style={{width:'130px',height:'150px'}}></img></div>
                     
                 </div>    
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon8} style={{width:'130px',height:'150px'}}></img></div>
                 </div>
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon9} style={{width:'130px',height:'150px'}}></img></div>
                 </div>
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon10} style={{width:'130px',height:'150px'}}></img></div>
                 </div>
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon11} style={{width:'130px',height:'150px'}}></img></div>
                 </div>               
             </div>

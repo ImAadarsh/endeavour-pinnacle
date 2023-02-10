@@ -13,7 +13,7 @@ const SolutionsBenefits = () =>{
             <Navigation content={"Solutions Benefits"}></Navigation>
             <div className="list">
                
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon1}></img></div>
                     <div className="content">
                         <p>Secure and Reliable Infrastructure for ALL Services</p>
@@ -23,7 +23,7 @@ const SolutionsBenefits = () =>{
                 
 
                 
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon2}></img></div>
                     <div className="content">
                         <p>Seamless Integration of Existing Application</p>
@@ -31,7 +31,7 @@ const SolutionsBenefits = () =>{
                 </div>
 
             
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon3}></img></div>
                     <div className="content">
                         <p>Automated Customer Service with live Chat Connection</p>
@@ -39,7 +39,7 @@ const SolutionsBenefits = () =>{
                 </div>
 
             
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon4}></img></div>
                     <div className="content">
                         <p>High ROI with 99.97%* Message Delivery Rate</p>

@@ -8,10 +8,10 @@ const Bfsi = () =>{
         <div className="containerBfsi">
             <Navigation content={"BFSI- Banking, Financial Sevices and Insurance"}></Navigation>
             <div className="listAndImg">
-                <div className="imgBfsi">
+                <div className="imgBfsi" data-aos='fade-left'>
                     <img src={bfsiLogo}></img>
                 </div>
-                <div className="listBfsi">
+                <div className="listBfsi" data-aos='fade-right'>
                     <h1>Build Trust and Achieve More with Timely Communication</h1>
                     <p>
                     Lorem lpsum is simply dummy text of the printing and typesetting industry

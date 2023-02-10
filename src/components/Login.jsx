@@ -8,7 +8,7 @@ const Login = () => {
         <div className="login">
             <Navigation content={""}></Navigation>
             <div className="form">
-                 <form>
+                 <form data-aos='flip-left' data-aos-duration="2000">
                      <h2>LOGIN</h2>
                      <input placeholder="Enter Email" name="email" value={userData.email} required></input>                    
                      <input placeholder="Enter password" name="password" value={userData.password} required></input>    

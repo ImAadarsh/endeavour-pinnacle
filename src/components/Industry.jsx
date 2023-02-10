@@ -19,7 +19,7 @@ const Industry = () =>{
     return (
         <div className="industry">
             <Navigation content="INDUSTRY"></Navigation>
-            <div className="listContainer">
+            <div className="listContainer" data-aos='fade-left'>
             <div className="list" >
                 <div className="item">
                     <a href="/start/industry/bfsi">

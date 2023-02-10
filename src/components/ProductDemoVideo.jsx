@@ -7,7 +7,7 @@ const ProductDemoVideo = () =>{
     return (
         <div className="productDemoVideo">
             <Navigation content={"Product Demo Video"}></Navigation>
-            <div style={{display : 'flex', height : '70vh', justifyContent : 'center', alignItems : 'center'}}> 
+            <div  data-aos='zoom-in' data-aos-duration="2000" style={{display : 'flex', height : '70vh', justifyContent : 'center', alignItems : 'center'}}> 
             <iframe 
                 width="560" 
                 height="315" 

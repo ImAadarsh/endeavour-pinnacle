@@ -3,7 +3,7 @@ import '../styles/Header.css';
 
 const Header = ({content}) =>{
     return (
-        <div className="header">
+        <div className="header" data-aos='fade-down'>
             <h3>{content}</h3>
         </div>
     )

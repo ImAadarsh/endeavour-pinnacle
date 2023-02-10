@@ -6,8 +6,8 @@ const Divider = () =>{
         <div className="divider">
             <Logo></Logo>
             <ul>
-                <li><a href="/start/industry">INDUSTRY</a></li>
-                <li><a href="/start/product">PRODUCT</a></li>
+                <li data-aos='fade-left'><a href="/start/industry">INDUSTRY</a></li>
+                <li data-aos='fade-right'><a href="/start/product">PRODUCT</a></li>
             </ul>
         </div>
     )

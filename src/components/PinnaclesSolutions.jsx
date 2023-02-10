@@ -10,15 +10,15 @@ const PinnaclesSolutions = () => {
         <div className="pinnaclesSolutions">
             <Navigation content={"Pinnacles Solutions"}></Navigation>
             <div className="list">
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div style={{fontSize : '30px'}}>D I S C O V E R</div> 
                     <div className="icons"><img src={Discover}></img></div>                   
                 </div>
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div style={{fontSize : '30px'}}>C O N N E C T</div> 
                     <div className="icons"><img src={Connect}></img></div>                   
                 </div>
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div style={{fontSize : '30px'}}>E N G A G E</div> 
                     <div className="icons"><img src={Engage}></img></div>                   
                 </div>

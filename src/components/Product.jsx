@@ -13,7 +13,7 @@ const Product = () =>{
             <Navigation content="PRODUCTS LIST"></Navigation>
             <div className="list">
                
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={Sms}></img></div>
                     <div style={{fontWeight :'bold'}}>BFSI</div>
                     <div className="content">
@@ -24,7 +24,7 @@ const Product = () =>{
                 
 
                 
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={Email}></img></div>
                     <div style={{fontWeight :'bold'}}>EMAIL</div>
                     <div className="content">
@@ -33,7 +33,7 @@ const Product = () =>{
                 </div>
 
             
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={WhatsApp}></img></div>
                     <div style={{fontWeight :'bold'}}>WHATSAPP BUSINESS API</div>
                     <div className="content">
@@ -42,7 +42,7 @@ const Product = () =>{
                 </div>
 
             
-                <div className="item">
+                <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={Voice}></img></div>
                     <div style={{fontWeight :'bold'}}>VOICE</div>
                     <div className="content">
