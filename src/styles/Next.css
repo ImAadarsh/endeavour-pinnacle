@@ -1,7 +1,8 @@
 .next {
-    position: absolute;
+    position: fixed;
     right: 60px;
     bottom: 80px;
+
 }
 
 @media only screen and (max-width: 600px) {

@@ -9,7 +9,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 export default function ReadMore({_id}) {
   const [open, setOpen] = React.useState(false);
-  const [data, setData] = React.useState({id : _id, email : ''});
+  const [data, setData] = React.useState({caseid : _id, email : ''});
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -30,9 +30,17 @@ export default function ReadMore({_id}) {
 
   const submit = async () => {
     console.log(data);
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+    var raw = JSON.stringify(data);
+    
     var requestOptions = {
-        method: 'POST'
-      };
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
       
     await fetch(`${process.env.REACT_APP_URL}/user/send`, requestOptions)
         .then(response => response.json())
