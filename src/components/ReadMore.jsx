@@ -34,7 +34,7 @@ export default function ReadMore({_id}) {
         method: 'POST'
       };
       
-    await fetch(`${process.env.REACT_APP_URL}/casestudy`, requestOptions)
+    await fetch(`${process.env.REACT_APP_URL}/user/send`, requestOptions)
         .then(response => response.json())
         .then((result)=>{
           return result;
