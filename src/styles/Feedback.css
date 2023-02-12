@@ -1,0 +1,28 @@
+.feedback {
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.questions {
+    width: 80%;
+    min-height: 80%;
+    border: 1px solid rgb(99, 96, 96);
+    box-shadow: -1px 1px 10px 2px rgb(133, 130, 130);
+    border-radius: 10px;
+}
+
+.question ul {
+   list-style-type: none;
+   align-items: self-start;
+   width: 99%;
+   border: 1px solid rgb(158, 163, 158);
+   border-radius: 10px;
+   margin: 5px;
+}
+.question ul li {   
+    width: 100%;
+    margin-right: 2%;
+    text-align: left;
+}

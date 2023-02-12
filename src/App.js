@@ -18,6 +18,7 @@ import ContactUs from './components/ContactUs';
 import Login from './components/Login';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Feedback from './components/Feedback';
 function App() {
   const [loading, setLoading] = useState(false);
 
@@ -26,7 +27,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 100);
   }, []);
   return (
     <div className="App">
@@ -49,6 +50,7 @@ function App() {
           <Route exact path="/start/8" element={<CaseStudiesAndTestimonials />}></Route>
           <Route exact path="/start/9" element={<ContactUs />}></Route>
           <Route exact path="/start/10" element={<Login />}></Route>
+          <Route exact path="/start/11" element={<Feedback />}></Route>
         </Routes>
       </>      
     )}

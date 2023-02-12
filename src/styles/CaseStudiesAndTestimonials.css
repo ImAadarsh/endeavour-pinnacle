@@ -35,6 +35,8 @@
 }
 .caseStudiesAndTestimonials .list .item .content {
     margin: 5px;
+    height: 75px;
+    overflow: hidden;
 }
 .caseStudiesAndTestimonials .list .item .icons {
     width: 100%;
@@ -43,6 +45,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .caseStudiesAndTestimonials .list .item .icons img {
     width: 80px;
     height: 70px;

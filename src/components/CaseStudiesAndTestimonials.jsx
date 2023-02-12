@@ -1,15 +1,14 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import '../styles/CaseStudiesAndTestimonials.css';
 import Logo from './Logo';
-import icon1 from '../assets/CaseStudiesAndTestimonials/1.png';
-import icon2 from '../assets/CaseStudiesAndTestimonials/2.png';
 import icon3 from '../assets/CaseStudiesAndTestimonials/3.png';
 import OwlCarousel from 'react-owl-carousel';  
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Next from "./Next";
-
+import ReadMore from "./ReadMore";
 const CaseStudiesAndTestimonials = () =>{
+    const [data, setdata] = useState([]);
     const options = {
         margin: 30,
         responsiveClass: true,
@@ -37,6 +36,23 @@ const CaseStudiesAndTestimonials = () =>{
             }
         },
     };
+
+    const getData = async ( ) => {        
+        var requestOptions = {
+          method: 'GET'
+        };
+        
+        await fetch(`${process.env.REACT_APP_URL}/casestudy`, requestOptions)
+          .then(response => response.json())
+          .then((result)=>{
+            setdata(result.data);
+          })
+          .catch(error => console.log('error', error));
+    }
+
+    useEffect(() => {
+        getData();
+      }, []);
     return (
         <div className="caseStudiesAndTestimonials" >
             <Logo></Logo>
@@ -45,43 +61,19 @@ const CaseStudiesAndTestimonials = () =>{
                     <h2>CaseStudies</h2>
                     <a href="#">100+ CASE STUDY</a>
                 </div>   
-                <OwlCarousel className="owl-theme" {...options} loop style={{width:"80%"}}>
-                    <div className="item" data-aos='flip-left' data-aos-duration="2000">
-                        <div className="icons"><img src={icon1}></img></div>
-                        <div className="content">
-                            <p>Boost your product and service's credibility by adding testimonials from your clients</p>
+                <OwlCarousel key={`carousel_${data.length}`} className="owl-theme" {...options} loop style={{width:"80%"}}>
+                    {data?.map((item,id)=>(
+                        <div key={id} className="item" data-aos='flip-left' data-aos-duration="2000">
+                            <div className="icons"><img src={item.icon}></img></div>
+                            <div className="content">
+                                <p>{item.text}</p>
+                            </div>
+                            <div>
+                                <ReadMore _id={item._id}></ReadMore>
+                            </div>
                         </div>
-                        <div>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div className="item" data-aos='flip-left' data-aos-duration="2000">
-                        <div className="icons"><img src={icon2}></img></div>
-                        <div className="content">
-                            <p>Boost your product and service's credibility by adding testimonials from your clients</p>
-                        </div>
-                        <div>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div className="item" data-aos='flip-left' data-aos-duration="2000">
-                        <div className="icons"><img src={icon1}></img></div>
-                        <div className="content">
-                            <p>Boost your product and service's credibility by adding testimonials from your clients</p>
-                        </div>
-                        <div>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div className="item" data-aos='flip-left' data-aos-duration="2000">
-                        <div className="icons"><img src={icon2}></img></div>
-                        <div className="content">
-                            <p>Boost your product and service's credibility by adding testimonials from your clients</p>
-                        </div>
-                        <div>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>    
+                    ))
+                    }                      
                 </OwlCarousel>
                 
             </div>
