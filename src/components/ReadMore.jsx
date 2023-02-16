@@ -55,11 +55,10 @@ export default function ReadMore({_id}) {
         Read More
       </Button>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Subscribe</DialogTitle>
+        <DialogTitle>Download Full Case Study</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            To get pdf of content, please enter your email address here. We
-            will send pdf by email.
+             Enter Email Address to receive the case study
           </DialogContentText>
           <TextField
             autoFocus

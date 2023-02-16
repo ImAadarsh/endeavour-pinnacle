@@ -53,7 +53,7 @@ const Login = () => {
                         <input onChange={setValue} placeholder="Enter password" name="password"  required></input>    
                         <button onClick={navigateAfter}>LOGIN</button>
                     <div>
-                        new user? <a href="#">create new account</a>
+                        <a href="/start/11" style={{textDecoration:'none',color:'red'}}>Skip</a>
                     </div>                
                  </form>
             </div>

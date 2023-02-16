@@ -21,35 +21,35 @@ const OurMerits = () =>{
             <div className="list">            
                 <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon1}></img></div>
-                    <div style={{fontWeight :'bold'}}>19 Years</div>
+                    <div style={{fontWeight :'bold',fontSize:'25px'}}>19 Years</div>
                     <div className="content">
                         <p>Of learning as a marketer</p>
                     </div> 
                 </div>              
                 <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon2}></img></div>
-                    <div style={{fontWeight :'bold'}}>6000+</div>
+                    <div style={{fontWeight :'bold',fontSize:'25px'}}>6000+</div>
                     <div className="content">
                         <p>Satisfied</p>
                     </div>
                 </div>        
                 <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon3}></img></div>
-                    <div style={{fontWeight :'bold'}}>75 Billion +</div>
+                    <div style={{fontWeight :'bold',fontSize:'25px'}}>75 Billion +</div>
                     <div className="content">
                         <p>Text delivering capacity / year</p>
                     </div>
                 </div>
                 <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon5}></img></div>
-                    <div style={{fontWeight :'bold'}}>100+</div>
+                    <div style={{fontWeight :'bold',fontSize:'25px'}}>100+</div>
                     <div className="content">
                         <p>Channel Partners</p>
                     </div>
                 </div>      
                 <div className="item" data-aos='flip-left' data-aos-duration="2000">
                     <div className="icons"><img src={icon4}></img></div>
-                    <div style={{fontWeight :'bold'}}>99.99%</div>
+                    <div style={{fontWeight :'bold',fontSize:'25px'}}>99.99%</div>
                     <div className="content">
                         <p>API Uptime</p>
                     </div>
